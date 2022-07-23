@@ -33,7 +33,8 @@ $router->get('/projectsHome','ProjectsController@onSelectThree');
 $router->get('/projectsAll','ProjectsController@onSelectAll');
 $router->post('/projectsDetails','ProjectsController@onSelectDetails');
 
-$router->get('/videoHome','VideoController@onSelectAll');
-$router->get('/techDesc','TechDescController@onSelectAll');
-$router->get('/homeTopTitle','HomeTopTitleController@onSelectAll');
-$router->get('/totalProjectClient','TotalProjectClientController@onSelectAll');
+$router->get('/videoHome','HomeEtcController@onSelectVideo');
+$router->get('/totalProjectClient','HomeEtcController@onSelectProjectClient');
+$router->get('/techDesc','HomeEtcController@onSelectTechDesc');
+$router->get('/homeTopTitle','HomeEtcController@onSelectHomeTitle');
+
