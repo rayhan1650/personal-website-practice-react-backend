@@ -28,3 +28,7 @@ $router->post('/courseDetails','CourseController@onSelectDetails');
 $router->get('/footer','FooterController@onSelect');
 $router->get('/information','InformationEtcController@onSelect');
 $router->get('/services','ServicesController@onSelect');
+
+$router->get('/projectsHome','ProjectsController@onSelectThree');
+$router->get('/projectsAll','ProjectsController@onSelectAll');
+$router->post('/projectsDetails','ProjectsController@onSelectDetails');
