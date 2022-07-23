@@ -24,3 +24,5 @@ $router->post('/contactSend','ContactController@onContactSend');
 $router->get('/courseHome','CourseController@onSelectFour');
 $router->get('/courseAll','CourseController@onSelectAll');
 $router->post('/courseDetails','CourseController@onSelectDetails');
+
+$router->get('/footer','FooterController@onSelect');
