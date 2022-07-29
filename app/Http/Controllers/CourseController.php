@@ -14,9 +14,9 @@ class CourseController extends Controller
         $result=CourseTableModel::all();
         return $result;
     }
-    function onSelectDetails(Request $request){
-        $id=$request->input('id');
-        $result=CourseTableModel::where(['id'=>$id])->get();
+    function onSelectDetails($id){
+        $myId=$id;
+        $result=CourseTableModel::where(['id'=>$myId])->get();
         return $result;
     }
 }
