@@ -31,7 +31,7 @@ $router->get('/services','ServicesController@onSelect');
 
 $router->get('/projectsHome','ProjectsController@onSelectThree');
 $router->get('/projectsAll','ProjectsController@onSelectAll');
-$router->post('/projectsDetails','ProjectsController@onSelectDetails');
+$router->get('/projectsDetails/{id}','ProjectsController@onSelectDetails');
 
 $router->get('/videoHome','HomeEtcController@onSelectVideo');
 $router->get('/totalProjectClient','HomeEtcController@onSelectProjectClient');
