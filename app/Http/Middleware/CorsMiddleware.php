@@ -29,10 +29,13 @@ class CorsMiddleware
         //     return response()->json('ok',200,$headers);
         // }
 
-        $response = $next($request)->header('Access-Control-Allow-Origin','*');
+        return $next($request)
+                    ->header('Access-Control-Allow-Origin','*')
+                    ->header('Access-Control-Allow-Headers', 'Content-Type, X-Auth-Token, Authorization, Origin')
+                    ->header('Access-Control-Allow-Methods','*');
 
         // Post-Middleware Action
 
-        return $response;
+        
     }
 }
